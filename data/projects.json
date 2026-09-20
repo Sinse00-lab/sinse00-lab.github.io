@@ -1,5 +1,5 @@
 {
-  "updatedAt": 1789862400000,
+  "updatedAt": 1789928333184,
   "projects": [
     {
       "id": "arcade-lounge",
@@ -8,10 +8,16 @@
       "description": "Connect Four, Guess the Country and Escape Rooms, all playable against a friend through a shared link. Peer to peer over WebRTC, hosted as plain static files, with a night-mail airmail stamp design across the landing page and hub.",
       "category": "game",
       "status": "live",
-      "tags": ["javascript", "webrtc", "peerjs", "css", "cloudflare pages"],
-      "url": "https://arcade-lounge.pages.dev",
+      "tags": [
+        "javascript",
+        "webrtc",
+        "peerjs",
+        "css",
+        "cloudflare pages"
+      ],
+      "url": "https://arcade-lounge.pages.dev/",
       "repo": "",
-      "cover": "",
+      "cover": "data/covers/arcade-lounge-mua543dp.jpg",
       "date": "2026-09"
     },
     {
@@ -21,7 +27,14 @@
       "description": "A free-tools pipeline: extract frames, reconstruct camera positions with COLMAP, train a splat on a free Kaggle GPU with nerfstudio, then view the result in a three.js viewer with a property picker. Verified end to end on a real 59 photo capture.",
       "category": "3d",
       "status": "building",
-      "tags": ["three.js", "gaussian splatting", "colmap", "nerfstudio", "node.js", "javascript"],
+      "tags": [
+        "three.js",
+        "gaussian splatting",
+        "colmap",
+        "nerfstudio",
+        "node.js",
+        "javascript"
+      ],
       "url": "",
       "repo": "",
       "cover": "",
@@ -34,7 +47,10 @@
       "description": "A small self-contained service that answers availability questions and takes reservations, designed so any front end or agent can sit on top of it.",
       "category": "tool",
       "status": "building",
-      "tags": ["node.js", "api"],
+      "tags": [
+        "node.js",
+        "api"
+      ],
       "url": "",
       "repo": "",
       "cover": "",
