@@ -18,8 +18,8 @@
         root.classList.add('js');
       })();
     </script>
-    <script type="module" crossorigin src="./assets/index-DYuGDDBn.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CB69ZPPG.css">
+    <script type="module" crossorigin src="./assets/index-CxAG2a_z.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CChs2suh.css">
   </head>
   <body>
     <a class="skip" href="#projects">Skip to projects</a>
@@ -95,17 +95,20 @@
       <div class="wrap foot__row">
         <span id="foot-name">Rafael Anton Polvillo</span>
         <div class="foot__tools" data-edit-only>
-          <p class="foot__note">Edits are saved in this browser. Export, replace <code>src/data/projects.json</code> with the file, then redeploy to publish them.</p>
+          <p class="foot__note">You are signed in as the owner. Changes stay a draft in this browser until you press Publish in the bar at the bottom of the screen.</p>
           <div class="foot__buttons">
-            <button type="button" class="btn btn--ghost btn--sm" data-action="export" data-icon="download">Export projects</button>
+            <button type="button" class="btn btn--ghost btn--sm" data-action="site" data-icon="textAa">Edit site text</button>
+            <button type="button" class="btn btn--ghost btn--sm" data-action="export" data-icon="download">Back up projects</button>
             <button type="button" class="btn btn--ghost btn--sm" data-action="import" data-icon="upload">Import projects</button>
-            <button type="button" class="btn btn--ghost btn--sm" data-action="reset" data-icon="undo">Restore published</button>
+            <button type="button" class="btn btn--ghost btn--sm" data-action="reset" data-icon="undo">Discard changes</button>
+            <button type="button" class="btn btn--ghost btn--sm" data-action="signout" data-icon="signOut">Sign out</button>
           </div>
         </div>
       </div>
     </footer>
 
     <input type="file" id="import-file" accept="application/json,.json" hidden />
+    <div class="publish" id="publish" role="status" aria-live="polite" data-edit-only hidden></div>
     <div class="toasts" id="toasts" role="status" aria-live="polite"></div>
     <noscript><p style="padding:2rem">This site draws its project graph with JavaScript. Please enable it to browse the projects.</p></noscript>
   </body>
