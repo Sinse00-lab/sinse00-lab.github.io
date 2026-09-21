@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="dark" data-view="top">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -18,10 +18,35 @@
         root.classList.add('js');
       })();
     </script>
-    <script type="module" crossorigin src="./assets/index-CxAG2a_z.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CChs2suh.css">
+    <style>
+      .loader { display: none; }
+      .js .loader { position: fixed; inset: 0; z-index: 50; display: grid; background: #0d0f10; }
+    </style>
+    <script type="module" crossorigin src="./assets/index-baOrMibU.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DE01KS-5.css">
   </head>
   <body>
+    <div class="loader" id="loader" role="status" aria-label="Loading the portfolio">
+      <canvas class="loader__graph" id="loader-graph" aria-hidden="true"></canvas>
+      <span class="loader__corner loader__corner--tl" aria-hidden="true"></span>
+      <span class="loader__corner loader__corner--tr" aria-hidden="true"></span>
+      <span class="loader__corner loader__corner--bl" aria-hidden="true"></span>
+      <span class="loader__corner loader__corner--br" aria-hidden="true"></span>
+      <div class="loader__top" aria-hidden="true">
+        <span class="loader__mark">RAP</span>
+        <span id="loader-clock">T+0.0s</span>
+      </div>
+      <div class="loader__body">
+        <div class="loader__msg">
+          <p class="loader__eyebrow">Welcome to</p>
+          <p class="loader__title" id="loader-title"><span class="line">Rafael Anton Polvillo’s</span><span class="line">website portfolios</span></p>
+          <ol class="loader__log" id="loader-log" aria-hidden="true"></ol>
+        </div>
+        <p class="loader__count" aria-hidden="true"><span class="loader__num" id="loader-num"><span class="z">00</span>0</span><span class="loader__pct">%</span></p>
+      </div>
+      <div class="loader__bar" id="loader-bar" aria-hidden="true"><i class="loader__fill"></i><i class="loader__head"></i></div>
+    </div>
+
     <a class="skip" href="#projects">Skip to projects</a>
 
     <header class="nav" id="nav">
@@ -57,7 +82,7 @@
         <ul class="hero__fallback" id="fallback" hidden></ul>
       </section>
 
-      <section class="projects" id="projects" aria-labelledby="projects-title">
+      <section class="projects" id="projects" aria-labelledby="projects-title" hidden>
         <div class="wrap">
           <div class="section-head">
             <h2 id="projects-title" data-reveal>Projects</h2>
@@ -74,7 +99,7 @@
         </div>
       </section>
 
-      <section class="stack" id="stack" aria-labelledby="stack-title">
+      <section class="stack" id="stack" aria-labelledby="stack-title" hidden>
         <div class="wrap">
           <h2 id="stack-title" data-reveal>Stack</h2>
           <p class="stack__about" id="about" data-reveal></p>
@@ -83,7 +108,7 @@
         </div>
       </section>
 
-      <section class="contact" id="contact" aria-labelledby="contact-title">
+      <section class="contact" id="contact" aria-labelledby="contact-title" hidden>
         <div class="wrap">
           <h2 id="contact-title" data-reveal>Have something to build?</h2>
           <a class="btn btn--primary btn--lg" id="contact-link" href="#" data-magnetic>Contact</a>
